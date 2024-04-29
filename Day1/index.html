@@ -11,16 +11,23 @@
 <body>
     <!--Root Div
     SPS ---Single Page Application-->
-    <div id="mydiv"></div>
+    <div id="mydiv">
+
+
+    </div>
+
+   
 
     <script type="text/babel">
+
+        //Component
       function Hello() {
         return <h1>Hello World!</h1>;
       }
       
       const container = document.getElementById('mydiv');
       const root = ReactDOM.createRoot(container);
-      root.render(<Hello />)
+      root.render(<Hello />);
     </script>
 </body>
 </html>
