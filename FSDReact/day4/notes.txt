@@ -1,0 +1,12 @@
+Components
+Name your components with UpperCase
+
+cmd
+change directory ----- cd
+list of file in the directory ----- dir
+present working directory--------- pwd 
+go back one directory ---- cd ..
+go back to the root ---- cd /
+
+
+Creating 
