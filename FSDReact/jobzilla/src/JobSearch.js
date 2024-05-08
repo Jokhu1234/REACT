@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const JobSearch = () => {
   return (
@@ -38,7 +38,7 @@ const JobSearch = () => {
     </section>
   </main>
 
-  )
-}
+  );
+};
 
 export default JobSearch;

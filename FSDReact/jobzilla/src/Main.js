@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const Main = () => {
   return (
@@ -17,8 +17,8 @@ const Main = () => {
       </section>
     </section>
   </main>
-  )
-}
+  );
+};
 
 
 export default Main;

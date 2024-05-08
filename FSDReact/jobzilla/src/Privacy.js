@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const Privacy = () => {
   return (
@@ -61,7 +61,7 @@ const Privacy = () => {
     </section>
   </main>
 
-  )
-}
+  );
+};
 
 export default Privacy;

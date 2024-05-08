@@ -13,7 +13,7 @@ const Main = () => {
   
     return (
       <main>
-        <p> Hello {myName()}</p>
+        <p> Hello {myList()}</p>
         <button onClick={myClick}>Click Me</button>
       </main>
     );

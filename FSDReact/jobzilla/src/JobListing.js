@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const JobListing = () => {
   return (
@@ -59,7 +59,7 @@ const JobListing = () => {
     </section>
   </main>
 
-  )
-}
+  );
+};
 
 export default JobListing;
