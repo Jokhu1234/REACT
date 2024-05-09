@@ -1,64 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 
 const JobListing = () => {
+  const [jobs, setJobs] = useState([
+    {
+      id:1,
+      Title: "Software Developer",
+      Company: "ABC",
+      Country: "New York, NY",
+    },
+    {
+      id:2,
+      Title: "Data Scientist",
+      Company: "XYZ Corp.",
+      Country: "San Francisco, CA",
+    },
+    {
+      id:3,
+      Title: "Cybersecurity Analyst",
+      Company: "RBC",
+      Country: "Toronto, ON",
+    },
+  ]);
+
   return (
     <main>
-    <section id="job-listings" class="container">
-      <h2>Job Listings</h2>
-      <div id="job-listings-container">
-        <div class="job-listing">
-          <h3>Software Developer</h3>
-          <p>ABC Inc.</p>
-          <p>New York, NY</p>
-          <p>
-            We are looking for a skilled and experienced Software Developer to
-            join our team. The ideal candidate should have strong programming
-            skills in Java and experience with web development technologies
-            such as HTML, CSS, and JavaScript. Familiarity with databases and
-            version control systems is a plus.
-          </p>
+      <h3>Job Listings</h3>
+      {jobs.map((jobs) => (
+        <div className="job-listings" key={jobs.id}>
+          <h3>{jobs.Title}</h3>
+          <p>{jobs.Company}</p>
+          <p>{jobs.Country}</p>
         </div>
-
-        <div class="job-listing">
-          <h3>Data Scientist</h3>
-          <p>XYZ Corp.</p>
-          <p>San Francisco, CA</p>
-          <p>
-            We are seeking a talented Data Scientist to analyze and interpret
-            complex data sets. The successful candidate should have a strong
-            background in statistical analysis, machine learning, and data
-            visualization. Proficiency in programming languages such as Python
-            and R is required.
-          </p>
-        </div>
-        <div class="job-listing">
-          <h3>Software Developer</h3>
-          <p>ABC Inc.</p>
-          <p>New York, NY</p>
-          <p>
-            We are looking for a skilled and experienced Software Developer to
-            join our team. The ideal candidate should have strong programming
-            skills in Java and experience with web development technologies
-            such as HTML, CSS, and JavaScript. Familiarity with databases and
-            version control systems is a plus.
-          </p>
-        </div>
-        <div class="job-listing">
-          <h3>Software Developer</h3>
-          <p>ABC Inc.</p>
-          <p>New York, NY</p>
-          <p>
-            We are looking for a skilled and experienced Software Developer to
-            join our team. The ideal candidate should have strong programming
-            skills in Java and experience with web development technologies
-            such as HTML, CSS, and JavaScript. Familiarity with databases and
-            version control systems is a plus.
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-
+      ))}
+    </main>
   );
 };
 
