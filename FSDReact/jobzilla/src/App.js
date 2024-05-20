@@ -1,28 +1,30 @@
-
 import "./styles.css";
-import Header from "./Header";
-import Main from "./Main";
-import JobSearch from "./JobSearch";
-import JobListing from "./JobListing";
-import Terms from "./Terms";
-import Privacy from "./Privacy";
-import Contact from "./Contact";
-import Footer from "./Footer";
-;
 
+import Header from "./Header";
+import Footer from "./Footer";
+import Main from "./Main";
+import Contact from "./Contact";
+import TermsofService from "./TermsofService";
+import { Route, Routes } from "react-router-dom";
+import Privacy from "./Privacy";
+import JobSearch from "./JobSearch";
+import JobListings from "./JobListings";
 
 function App() {
   return (
     <div className="App">
-     <Header />
-     <Main />
-     <JobSearch />
-     <JobListing />
-     <Terms />
-     <Privacy />
-     <Contact />
-     <Footer />
-    
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Main />}></Route>
+        <Route path="/JobListings" element={<JobListings />}></Route>
+        <Route path="/JobSearch" element={<JobSearch />}></Route>
+        <Route path="/Privacy" element={<Privacy />}></Route>
+        <Route path="/Contact" element={<Contact />}></Route>
+        <Route path="/TermsofService" element={<TermsofService />}></Route>
+      </Routes>
+
+      <Footer />
     </div>
   );
 }

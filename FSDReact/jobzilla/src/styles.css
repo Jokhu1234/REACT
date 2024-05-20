@@ -73,9 +73,8 @@ footer p a {
 }
 
 #hero {
-    background-image: url("./images/mainPic.jpg");
-      background-size: cover;
-
+  background-size: cover;
+  background-image: url("./images/mainPic.jpg");
   display: flex;
   justify-content: center;
   height: 500px;

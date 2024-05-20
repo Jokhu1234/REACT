@@ -1,22 +1,33 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header>
-      <h1>Job Zila</h1>
+      <h1>Jobzilla</h1>
 
       <nav>
         <ul>
-          <li><a href="/job-zila/index.html">Home</a></li>
-
-          <li><a href="/job-zila/jobsearch.html">Job Search</a></li>
-          <li><a href="/job-zila/joblisting.html">Job Listing</a></li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
 
           <li>
-            <a href="/job-zila/terms-of-service.html">Terms of Service</a>
+            <Link to="/JobSearch">Job Search</Link>
           </li>
-          <li><a href="/job-zila/privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="/job-zila/contact-us.html">Contact Us</a></li>
+          <li>
+            <Link to="/JobListings">Job Listings</Link>
+          </li>
+
+          <li>
+            <Link to="/TermsofService">Terms of Service</Link>
+          </li>
+          <li>
+            <Link to="/Privacy">Privacy Policy</Link>
+          </li>
+          <li>
+            <Link to="/Contact">Contact Us</Link>
+          </li>
         </ul>
       </nav>
     </header>

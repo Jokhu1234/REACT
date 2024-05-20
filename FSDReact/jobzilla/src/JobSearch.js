@@ -3,11 +3,9 @@ import React from "react";
 const JobSearch = () => {
   return (
     <main>
-    <section id="job-search-section" class="container">
-      <h2>Find Your Dream Job</h2>
-
-      <div class="find-job-div">
-        <form id="search-form" action="#" method="GET">
+      <section id="job-search" class="container">
+        <h1>Find Your Dream Job</h1>
+        <form action="#" method="GET">
           <input
             type="text"
             name="keywords"
@@ -30,14 +28,11 @@ const JobSearch = () => {
             <option value="marketing">Marketing</option>
             <option value="marketing">Marketing</option>
             <option value="marketing">Marketing</option>
-           
           </select>
           <input type="submit" value="Search Jobs" />
         </form>
-      </div>
-    </section>
-  </main>
-
+      </section>
+    </main>
   );
 };
 

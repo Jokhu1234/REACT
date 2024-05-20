@@ -1,0 +1,49 @@
+{
+    "items": [
+      {
+        "id": 1,
+        "checked": false,
+        "item": "Bread"
+      },
+      {
+        "id": 2,
+        "checked": false,
+        "item": "Milk"
+      },
+      {
+        "id": 3,
+        "checked": false,
+        "item": "Eggs"
+      },
+      {
+        "id": 4,
+        "checked": false,
+        "item": "Chicken"
+      },
+      {
+        "id": 5,
+        "checked": false,
+        "item": "Broccoli"
+      },
+      {
+        "id": 6,
+        "checked": false,
+        "item": "Salmon"
+      },
+      {
+        "id": 7,
+        "checked": false,
+        "item": "Ground Beef"
+      },
+      {
+        "id": 8,
+        "checked": false,
+        "item": "Asparagus"
+      },
+      {
+        "id": 5,
+        "checked": false,
+        "item": "Spaghetti"
+      }
+    ]
+  }
