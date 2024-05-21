@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <p>
         &copy; 2023 My Job Board. All rights reserved. | 
-        <Link to="/Contact"> Contact Us </Link> |  <Link to="/TermsofService">Terms of Service</Link> | <Link to="/Privacy">Privacy Policy</Link>
+        <Link to="/Contact"> Contact Us</Link> |  <Link to="/TermsofService">Terms of Service</Link> | <Link to="/Privacy">Privacy Policy</Link>
       </p>
     </footer>
   );
