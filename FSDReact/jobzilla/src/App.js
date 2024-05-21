@@ -1,13 +1,13 @@
 import "./styles.css";
-import Header from "./Header";
-import Footer from "./Footer";
-import Main from "./Main";
-import Contact from "./Contact";
-import TermsofService from "./TermsofService";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Main from "./components/Main";
+import Contact from "./components/Contact";
+import TermsofService from "./components/TermsofService";
 import { Route, Routes } from "react-router-dom";
-import Privacy from "./Privacy";
-import JobSearch from "./JobSearch";
-import JobListings from "./JobListings";
+import Privacy from "./components/Privacy";
+import JobSearch from "./components/JobSearch";
+import JobListings from "./components/JobListings";
 
 
 
