@@ -1,63 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const JobListings = () => {
+  const [jobs, setJobs] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3500/jobs")
+      .then((response) => response.json())
+      .then((data) => setJobs(data))
+      .catch((error) => console.error('Error fetching data:', error));
+  }, []);
+
   return (
     <main>
-      <section id="job-listings" class="container">
-        <h2>Job Listings</h2>
-        <div id="job-listings-container">
-          <div class="job-listing">
-            <h3>Software Developer</h3>
-            <p>ABC Inc.</p>
-            <p>New York, NY</p>
-            <p>
-              We are looking for a skilled and experienced Software Developer to
-              join our team. The ideal candidate should have strong programming
-              skills in Java and experience with web development technologies
-              such as HTML, CSS, and JavaScript. Familiarity with databases and
-              version control systems is a plus.
-            </p>
-          </div>
-
-          <div class="job-listing">
-            <h3>Data Scientist</h3>
-            <p>XYZ Corp.</p>
-            <p>San Francisco, CA</p>
-            <p>
-              We are seeking a talented Data Scientist to analyze and interpret
-              complex data sets. The successful candidate should have a strong
-              background in statistical analysis, machine learning, and data
-              visualization. Proficiency in programming languages such as Python
-              and R is required.
-            </p>
-          </div>
-          <div class="job-listing">
-            <h3>Software Developer</h3>
-            <p>ABC Inc.</p>
-            <p>New York, NY</p>
-            <p>
-              We are looking for a skilled and experienced Software Developer to
-              join our team. The ideal candidate should have strong programming
-              skills in Java and experience with web development technologies
-              such as HTML, CSS, and JavaScript. Familiarity with databases and
-              version control systems is a plus.
-            </p>
-          </div>
-          <div class="job-listing">
-            <h3>Software Developer</h3>
-            <p>ABC Inc.</p>
-            <p>New York, NY</p>
-            <p>
-              We are looking for a skilled and experienced Software Developer to
-              join our team. The ideal candidate should have strong programming
-              skills in Java and experience with web development technologies
-              such as HTML, CSS, and JavaScript. Familiarity with databases and
-              version control systems is a plus.
-            </p>
-          </div>
+      <section id="joblistings-section">
+      <h2>Job Listings</h2>
+        <div className="job-listings">
+          <ul>
+            {jobs.map((job) => (
+              <li key={job.jobid}>
+                <h2>{job.title}</h2>
+                <p>{job.company}</p>
+                <p>{job.location}</p>
+                <p>{job.description}</p>
+                <p>
+                  <a href={job.applyLink} target="_blank" rel="noopener noreferrer">
+                    Apply
+                  </a>
+                  <hr/>
+                </p>
+              </li>
+              
+            ))}
+          </ul>
         </div>
-      </section>
-    </main>
+   </section>
+   </main>
   );
 };
 
