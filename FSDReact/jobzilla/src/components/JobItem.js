@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import { Link } from "react-router-dom";
 
 const JobItem = ({ job }) => {
   return (
@@ -10,7 +11,7 @@ const JobItem = ({ job }) => {
           <p>{job.description}</p>
           <p>
           <a href={job.applyLink} target="_blank" rel="noopener noreferrer">
-            Apply
+          <Link to="/Contact">Apply</Link>
             </a>
             <hr/>
         </p>
