@@ -3,12 +3,12 @@ import { FaPlus } from "react-icons/fa";
 
 const AddNewJob = ({ newJob, setNewJob, handleSubmit }) => {
   return (
-    <form className="addJob" onSubmit={handleSubmit}>
-      <label>Add Job</label>
+    <form className="addForm" onSubmit={handleSubmit}>
+      <label>Add New Job</label>
       <input
         autoFocus
         id="addJob"
-        placeholder="Add Job"
+        placeholder="Add New Job"
         required
         type="text"
         value={newJob}
