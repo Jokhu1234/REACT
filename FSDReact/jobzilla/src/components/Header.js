@@ -28,6 +28,9 @@ const Header = () => {
           <li>
             <Link to="/Contact">Contact Us</Link>
           </li>
+          <li>
+            <Link to="/AddJob">Add Job</Link>
+          </li>
         </ul>
       </nav>
     </header>

@@ -13,8 +13,11 @@ const SearchJob = ({ search, setSearch }) => {
         placeholder="Search Jobs"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
+  
       />
+       
     </form>
+  
   );
 };
 

@@ -11,6 +11,7 @@ import JobListings from "./components/JobListings";
 
 
 
+
 function App() {
   const API_URL = "http://localhost:3500/jobs";
 
@@ -20,11 +21,12 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Main />}></Route>
-        <Route path="jobListings" element={<JobListings />}></Route>
-        <Route path="jobSearch" element={<JobSearch />}></Route>
-        <Route path="privacy" element={<Privacy />}></Route>
-        <Route path="contact" element={<Contact />}></Route>
-        <Route path="termsofService" element={<TermsofService />}></Route>
+        <Route path="/JobListings" element={<JobListings />}></Route>
+        <Route path="/JobSearch" element={<JobSearch />}></Route>
+        <Route path="/Privacy" element={<Privacy />}></Route>
+        <Route path="/Contact" element={<Contact />}></Route>
+        <Route path="/TermsofService" element={<TermsofService />}></Route>
+        
       </Routes>
 
       <Footer />

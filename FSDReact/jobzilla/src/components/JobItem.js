@@ -11,7 +11,7 @@ const JobItem = ({ job }) => {
           <p>{job.description}</p>
           <p>
           <a href={job.applyLink} target="_blank" rel="noopener noreferrer">
-          <Link to="/Contact">Apply</Link>
+          <Link to="/Apply">Apply</Link>
             </a>
             <hr/>
         </p>

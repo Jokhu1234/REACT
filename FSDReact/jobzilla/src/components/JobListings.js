@@ -4,6 +4,8 @@ import JobContent from "./JobContent";
 import SearchJob from "./SearchJob";
 
 
+
+
 const JobListings = () => {
     const API_URL="http://localhost:3500/jobs";
 
@@ -11,6 +13,7 @@ const JobListings = () => {
     const [search, setSearch] = useState("");
     const [fetchError, setFetchError] = useState(null);
     const [isLoading, setIsLoading] = useState(true);
+    const [newJob, setNewJob] = useState("");
     
 
 
@@ -48,7 +51,7 @@ const JobListings = () => {
     <main>
         <section id="job-listings" className="container">
             <h2>Job Listings</h2>
-            <SearchJob search={search} setSearch={setSearch} />
+            <SearchJob search={search} setSearch={setSearch} /><br />
             <div id="job-listings-container">
             {isLoading && <p>Please wait while data is being loaded... </p>}     
         {fetchError && (
