@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import Privacy from "./components/Privacy";
 import JobSearch from "./components/JobSearch";
 import JobListings from "./components/JobListings";
+import AddJob from "./components/AddJob";
 
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/JobSearch" element={<JobSearch />}></Route>
         <Route path="/Privacy" element={<Privacy />}></Route>
         <Route path="/Contact" element={<Contact />}></Route>
+        <Route path="/Addjob" element={<AddJob/>}></Route>
         <Route path="/TermsofService" element={<TermsofService />}></Route>
         
       </Routes>
