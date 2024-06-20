@@ -74,6 +74,12 @@ footer p a {
   text-decoration: none;
 }
 
+.carouselInner {
+  height: 100%;
+  width: 100%;
+
+}
+
 #hero {
   background-size: cover;
   background-image: url("./images/mainPic.jpg");
@@ -84,6 +90,7 @@ footer p a {
   text-align: center;
   color: #eaaa82;
 }
+
 #hero-section {
   text-align: center;
   margin-top: 100px;

@@ -1,8 +1,11 @@
 import React from "react";
 
+
 const Main = () => {
+
   return (
     <main>
+    
       <section id="hero">
         <section id="hero-section">
           <h2>Welcome to Jobzilla</h2>
@@ -17,6 +20,7 @@ const Main = () => {
         </section>
       </section>
     </main>
+  
   );
 };
 
