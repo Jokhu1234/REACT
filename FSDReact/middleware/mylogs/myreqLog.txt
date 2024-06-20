@@ -1,0 +1,6 @@
+06/18/2024 06:50:31	 3b9a3995-aaea-4da5-abfe-5271bb9b8fc1 	GET	undefined	/
+06/18/2024 06:50:31	 25b1f0ad-bfa1-40f2-a3a2-4a49f3216ee4 	GET	undefined	/css/myStyle.css
+06/18/2024 06:50:31	 eaf95575-873c-4971-9909-65669cfdf7a3 	GET	undefined	/favicon.ico
+06/18/2024 06:55:13	 f5a4e8bf-1d9d-460a-bee5-fe7435813a8a 	GET	undefined	/my_new_page.html
+06/18/2024 06:55:13	 1b55cfce-f285-4ea2-a530-70348f3c012b 	GET	undefined	/css/myStyle.css
+06/18/2024 06:55:13	 f7a57b64-322d-434c-957e-33f0c7f194fa 	GET	undefined	/img/mainPic.jpg

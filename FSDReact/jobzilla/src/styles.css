@@ -74,6 +74,10 @@ footer p a {
   text-decoration: none;
 }
 
+footer p a:hover {
+  color:rgb(209, 190, 82);
+}
+
 .carouselInner {
   height: 100%;
   width: 100%;
@@ -209,13 +213,13 @@ ul {
   margin-bottom: 10px;
 }
 
-#contact-form {
+#form {
   background-color: #ffffff;
   padding: 20px;
 }
 
-#contact-form input,
-#contact-form textarea {
+.form-div input,
+.form-div textarea {
   display: block;
   width: 100%;
   margin-bottom: 10px;
@@ -224,13 +228,19 @@ ul {
   resize: vertical;
 }
 
-#contact-form input[type="submit"] {
+.form-div button[type="submit"] {
   background-color: #333;
   color: #fff;
   padding: 10px 15px;
   margin-top: 50px;
   border: none;
+  cursor: pointer; 
 }
+
+.form-div button:hover{
+  color: #f7df04;
+}
+  
 .form-div {
   margin-bottom: 20px;
   border: 1px solid #ccc;
