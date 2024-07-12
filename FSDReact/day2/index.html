@@ -5,22 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>React Elements</title>
     <script
-      src="https://unpkg.com/react@18/umd/react.development.js"
+      src="https://unpkg.com/react@17/umd/react.development.js"
       crossorigin
     ></script>
     <script
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
       crossorigin
     ></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
   </head>
   <body>
-    <h1>Welcome to CBC</h1>
+    <h1 style="color: green">Welcome to CBC</h1>
     <div id="root"></div>
     <div id="root2"></div>
+
     <script type="text/babel">
-      ReactDom.render(
-        <h1>Learning React</h1>,
+      /*
+      ReactDOM.render(
+        React.createElement("h1", null, "Learning React"),
+        document.getElementById("root")
+      );
+      */
+
+      /*
+      let heading = React.createElement(
+        "h1",
+        { style: { color: "red" } },
+        "Learning React at CBC"
+      );
+
+      ReactDOM.render(heading, document.getElementById("root"));
+*/
+
+      //Refactoring using JSX
+      /*
+      let ul = React.createElement(
+        "ul",
+        { style: { color: "Blue" } },
+        React.createElement("li", null, "HTML"),
+        React.createElement("li", null, "JavaScript"),
+        React.createElement("li", null, "CSS"),
+        React.createElement("li", null, "React")
+      );
+      
+*/
+
+      //JSX
+      let course1 = "HTML";
+      let course2 = "JavaScript";
+      let course3 = "CSS";
+      let course4 = "React";
+
+      ReactDOM.render(
+        <ul>
+          <li>{course1}</li>
+          <li>{course2}</li>
+          <li>{course3}</li>
+          <li>{course4.toLocaleUpperCase()}</li>
+          <li>{course4.length}</li>
+        </ul>,
 
         document.getElementById("root")
       );

@@ -10,7 +10,7 @@ const path = require('path');
 const fsPromises = require('fs').promises;
 
 
-const myPORT = process.env.PORT || 3600;
+const myPORT = process.env.PORT || 3400;
 
 /*
 const serveFile = async (filePath, contentType, response)=> {
@@ -147,7 +147,7 @@ myServer.listen(myPORT, ()=> console.log(`My server is using port ${myPORT}`));
 //test the code
 //>npm run dev
 //in the browser type the url to see the get request getting logged on the console.
-//http://localhost:3600/
+//http://localhost:3400/
 
 
 

@@ -1,0 +1,9 @@
+06/23/2024 16:29:43	 df618c3f-ccd4-4b5b-bc1e-73d5037a50ab 	TypeError 	 data.jobs is not iterable
+06/23/2024 16:32:35	 da8688cb-7cc0-4cca-9790-04fc34d2fb7e 	TypeError 	 data.jobs is not iterable
+06/23/2024 16:32:36	 cb03811d-8211-4eb0-be44-4cadba270011 	TypeError 	 data.jobs is not iterable
+06/23/2024 16:32:36	 33b360c5-8d0e-49b9-b7ff-e67545d299fe 	TypeError 	 data.jobs is not iterable
+06/23/2024 16:36:43	 31caeb9b-cea4-4380-ba74-c4586dd84bce 	TypeError 	 data.jobs is not iterable
+06/23/2024 16:46:02	 de5f1e4b-21ac-4351-a91a-254f9146c8c1 	ReferenceError 	 jobs is not defined
+06/23/2024 16:46:03	 4dabfa11-25d8-44f5-82f4-07b64ffa6dc6 	ReferenceError 	 jobs is not defined
+06/23/2024 16:50:53	 6ef3d75a-492b-443d-a9e5-de04646e58b3 	SyntaxError 	 Bad control character in string literal in JSON at position 49
+06/23/2024 17:04:20	 ee437b50-2b8e-4090-b0e0-9692b482a395 	SyntaxError 	 Expected double-quoted property name in JSON at position 16

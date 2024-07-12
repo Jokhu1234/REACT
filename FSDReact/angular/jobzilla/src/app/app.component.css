@@ -1,0 +1,34 @@
+.joblistings-section {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+.job-listings {
+  padding: 20px;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.job-listings h2 {
+  margin-bottom: 10px;
+}
+.job-listings {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-left: 10px;
+}
+
+.job-listings h3 {
+  margin-bottom: 10px;
+}
+
+.job-listings p {
+  margin-bottom: 10px;
+}

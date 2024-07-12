@@ -1,0 +1,447 @@
+React is a JS Library
+Cretaed at Facebook
+Open source in 2013
+https://react.dev/
+
+---code editors
+chrome extension (react-developer-tools)
+https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+after installing go to browser's settings ---extension ---select react-dev-tools ------check Allow access to file URLs
+
+React Sandbox
+--react.new in the url--
+https://codesandbox.io/p/sandbox/react-new?utm_source=dotnew
+
+VS Code extension
+ES7+ React/Redux/React-Native s
+
+Babel
+https://babeljs.io/docs/babel-standalone
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+Compenents
+Name you components with UpperCase
+
+
+https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/help
+cmd
+change directory ------ cd 
+list of file in the directory ------ dir
+present working directory----------- pwd
+go back one directory ----- cd ..
+go back to the root ---- cd /
+
+
+
+
+
+
+Creating React App using CRA
+npx create-react-app name-of-the-application
+
+prop drilling
+day7
+
+useEffect Hook
+The useEffect Hook allows you to perform side effects in your components.
+
+Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+
+useEffect accepts two arguments. The second argument is optional.
+
+useEffect(<function>, <dependency>)
+
+https://www.w3schools.com/react/react_useeffect.asp
+
+//useEffect ( ()=> {}, []   );
+
+import { useEffect, useState } from "react";
+
+function App() {
+  const [emotion, setEmotion] = useState("happy");
+
+//useEffect ( ()=> {}, []   );
+
+  useEffect(() => {
+    console.log(`My initial emotion is ${emotion} `);
+  }, [emotion]);
+
+  return (
+    <div className="App">
+      <h1>Current emotion is {emotion}</h1>
+
+      <button onClick={() => setEmotion("Sad")}>Sad</button>
+      <button onClick={() => setEmotion("Excited")}>Excited</button>
+
+    </div>
+  );
+}
+
+export default App;
+
+//Setting up the json server
+create a data folder in the root of the project
+create a file in the data folder with the extension db.json
+and add items data in the json file Cretaed
+
+{
+    "items": [
+        {
+            "id": 1,
+            "checked": false,
+            "item": "Milk"
+        },
+        {
+            "id": 2,
+            "checked": false,
+            "item": "Cake"
+        },
+        {
+            "id": 3,
+            "checked": false,
+            "item": "Bread"
+        }
+    ]
+}
+
+npx json-server -p 3500 -w data/db.json
+
+  Resources
+  http://localhost:3500/items
+
+  check the url in thr browser
+
+  check the individual items with their ids  
+  http://localhost:3500/items/1
+
+CRUD operation
+Create Read update and delete
+
+
+//React Router
+//installing router 
+
+npm install react-router-dom@6
+
+/***************************************/
+MongoDB installation
+
+**MongoDB Community Server Download**
+[Download MongoDB Community Server](https://www.mongodb.com/try/download/community)
+[MongoDB Compass Download (GUI)](https://www.mongodb.com/try/download/compass)
+execute the compass (run the program)
+and press connect db
+
+
+
+[Download MongoDB Command Line Database Tools](https://www.mongodb.com/try/download/database-tools)
+chnage the path to C:\Program Files\MongoDB\Server\7.0\
+
+[Installing the Database Tools on Windows](https://www.mongodb.com/docs/database-tools/installation/installation-windows/)
+
+[MongoDB Shell Download](https://www.mongodb.com/try/download/shell)
+select package as .msi
+C:\Users\<your_usename>\AppData\Local\Programs\mongosh
+
+Execute the mongosh.exe
+press enter
+>show dbs
+
+//Importing the collection
+go to the mongoimport utility in the bin folder
+
+cd 'C:\Program Files\MongoDB\Server\7.0\bin\'
+
+and call mongoimport with any db name you like with the appropriate collections path.
+
+>mongoimport --db=cook --jsonArray D:\CBC\SEProject\fsd_jan_2024\react\FSDReact\mongoDB\collection\examples.json
+
+after all the files are uploaded from the collection folder.
+
+>show dbs
+
+switch the db to cook
+> use cook
+
+> show collections
+>db.recipes.find();
+
+>db.recipes.find().count();
+
+
+>db.recipes.find({}, {"title":1}).limit(3);
+
+
+
+#### In MongoDB Documents are:
+
+a) Fields of strings, srrays and objects stored in Text
+b) Fields and values stored in JSON
+c) Fields with columns containing strings, numbers and booleans
+d) Field value pairs stored in BSON
+
+answer: D
+
+
+
+#### To find a Document with the title Apple Pie and return only the title:
+
+a) `db.recipes.find({"title": "Apple Pie"}, {"title": 1})`
+b) `db.recipes.find({"title": 1}, {"title": "Apple Pie"})`
+c) `db.recipes.find({"title": "Apple Pie"}, "title": 1)`
+d) `db.recipes.find({"title": "Apple Pie", "title": 1})`
+
+answer: a
+
+
+#### In a Document you can store:
+
+a) Just Strings and Numbers
+b) Strings, Arrays, Objects, Documents, Numbers, Booleans, Etc.
+c) Either Strings, Numbers or Booleans
+d) Multiple different kinds of Strings
+
+answer : B
+
+#### To sort by title in descending order you would use ...
+
+a) `db.collection.find({}).sort({"title" : 1})`
+b) `db.collection.find({"title" : -1}).sort()`
+c) `db.collection.find({}).sort({"title" : -1})`
+d) `db.collection.find({}, {"title": -1})`
+
+
+db.recipes.find({}, {"title":1, "cook_time":1}).sort({title:-1});
+
+
+create a recipe documnet with 4 fields one array object and one document inside an array
+
+********************************************************
+FTP
+
+FileZila
+
+WinSCP
+  FTPs://202.30.60.96
+  ipAddress : 202.30.60.96
+  userName: abc
+  password: *********
+
+  
+
+Node documentation  Link
+https://nodejs.org/docs/latest/api/
+
+
+NPM
+//https://www.npmjs.com
+/search
+/documentation
+https://docs.npmjs.com/
+//CLI
+
+//NPM Commands
+//To install NPM
+//>npm install 
+or 
+//>npm i
+or
+//>npm add
+
+//To install nodemon
+//https://www.npmjs.com/package/nodemon
+npm i nodemon -g
+
+
+//How to initializing the npm
+>npm init
+//this will generate the package.json file
+
+>npm init -y
+
+//add a package
+//npm i date-fns
+
+add .gitignore file in the root directory and place node_modules in it.
+
+//to include the node packages back run the install
+>npm install
+
+//To install the nodemon as a dev dependency.
+>npm i nodemon --save-dev
+or 
+>npm i nodemon -D
+
+in the package.json file add the following key-values
+"scripts": {
+    
+
+    "start" : "node index",
+    "dev" : "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+>npm start
+>npm run dev
+
+//Adding uuid dependency
+>npm i uuid
+
+
+
+ "nodemon": "^3.1.3"
+ "uuid": "^10.0.0"
+
+
+ "nodemon": "*" //get the latest version
+ "nodemon": "^3.1.3"
+ 3 means major version
+ 1 means minor version
+ 3 means patch version
+ "nodemon": "^3.1.3" install the latest minor version in 3 not the major
+ "nodemon": "~3.1.3" install the latest patch version in 3 not the major not the minor
+ "nodemon": "3.1.3" only this version
+
+ //Uninstalling the package
+ >npm un
+ >npm rm
+ >npm uninstall
+
+ -D
+ -g 
+
+ //Event Emitter
+
+ //WebServer
+ 
+ //Express
+ >npm install express --save
+
+https://expressjs.com
+
+https://expressjs.com/en/guide/routing.html
+
+//Routes
+
+//Route Handlers
+
+//Middleware
+//Types of Middleware
+Custom 
+Builtin
+Third Party
+
+//installing CORS 
+>npm i cors
+
+//routing
+
+
+//api Routes
+
+//http://localhost:3400/employees
+//http://localhost:3400/employees/1
+//http://202.20.30.40:3400/employees/1
+
+to test apis
+thunder client 
+or
+postman
+
+//n-tier 
+//MVC
+
+//
+to install bcrypt
+>npm i bcrypt
+node.bcrypt.js
+https://www.npmjs.com/package/bcrypt
+
+https://codahale.com/how-to-safely-store-a-password/
+
+
+//to register a new user/test
+method : post
+url : http://localhost:3400/register
+
+body
+{
+   "user":"sadeed10","pwd":"abc12302@"
+  }
+
+//To test user authentication
+method : post
+url : http://localhost:3500/auth
+
+body
+{
+   "user":"sadeed10","pwd":"abc12302@"
+  }
+
+//get all employees
+method : get
+url : http://localhost:3500/employees
+
+
+
+////JWT
+Intro to JSON Web Tokens: https://jwt.io/introduction
+All You Need to Know About Storing JWT in the Frontend: https://dev.to/cotter/localstorage-vs-cookies-all-you-need-to-know-about-storing-jwt-tokens-securely-in-the-front-end-15id
+NPM jsonwebtoken package: https://www.npmjs.com/package/jsonwebtoken
+NPM cookie-parser package: https://www.npmjs.com/package/cookie-parser
+Deleting Cookies: https://expressjs.com/en/api.html#res.clearCookie
+Cross-Site Scripting (XSS): https://owasp.org/www-community/attacks/xss/
+Cross-Site Request Forgery (CSRF): https://owasp.org/www-community/attacks/csrf
+REST Security Cheat Sheet: https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html
+
+
+>npm i jsonwebtoken cookie-parser dotenv
+
+to generate the token value go to node 
+>require('crypto').randomBytes(64).toString('hex');
+
+create a .env file 
+ACESS_TOKEN_SECRET = //token_value
+REFRESH_TOKEN_SECRET = //token_value
+
+and make sure its part of the gitignore file
+
+to register a user 
+method:  post
+url : http://localhost:3400/register
+ {
+        "user":"sadeed11","pwd":"abc12302@"
+       }
+
+method:  post
+url : http://localhost:3400/auth
+ {
+        "user":"sadeed11","pwd":"abc12302@"
+       }
+
+method:  get
+url : http://localhost:3400/employees
+
+with the token value in the Auth/Bearer
+
+//////////////Incorporating the mongoDB and Schema
+//folder mongodbschema
+
+https://www.mongodb.com/
+signin
+https://cloud.mongodb.com/v2#/org/6655cda81e41fc386437f688/projects/create
+
+
+connection string
+mongodb+srv://test:<password>@employeedb.ygycrtb.mongodb.net/?retryWrites=true&w=majority&appName=employeeDB
+
+mongodb+srv://<username>:<password>@<databasename>.ygycrtb.mongodb.net/?retryWrites=true&w=majority&appName=<databasename>
+
+Mongoose documentation
+https://mongoosejs.com/docs/guide.html
+
+Install mongoose
+>npm i mongoose
+
+
+https://mongoosejs.com/docs/models.html
